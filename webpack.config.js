@@ -32,7 +32,7 @@ module.exports = {
   postcss: [
     require("postcss-cssnext")()
   ],
-  devtool: 'source-map',
+  // devtool: 'source-map',
   plugins: [
     new ExtractTextPlugin("../css/style.css"),
     new webpack.optimize.DedupePlugin(),
