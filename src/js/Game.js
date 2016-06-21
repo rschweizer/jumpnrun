@@ -38,6 +38,7 @@ App.Game = (game) => {
     createCollectibles()
 
     controls = {}
+    controls.touch = game.input.activePointer
     controls.space = game.input.keyboard.addKey(32)
     controls.esc = game.input.keyboard.addKey(27)
     controls.esc.onDown.add(togglePlayPause, self)
@@ -77,7 +78,7 @@ App.Game = (game) => {
         player.animations.play('run')
       }
 
-      if(controls.space.isDown) {
+      if(controls.space.isDown || controls.touch.isDown) {
         jump()
       }
 
