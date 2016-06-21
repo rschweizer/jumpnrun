@@ -1,0 +1,45 @@
+{
+  "rules": {
+    "indent": [
+      2,
+      2,
+      {
+        "VariableDeclarator" : {
+          "var": 2,
+          "let": 2,
+          "const": 3
+        }
+      }
+    ],
+    "semi": [
+      2,
+      "never"
+    ],
+    "yoda": [
+     2,
+     "never"
+    ],
+    "consistent-return": 2,
+    "curly": 2,
+    "default-case": 2,
+    "guard-for-in": 1,
+    "no-alert": 2,
+    "no-eval": 2,
+    "no-extend-native": 1,
+    "no-loop-func": 2,
+    "no-param-reassign": 2,
+    "no-self-compare": 2,
+    "no-void": 2,
+    "no-with": 2,
+    "vars-on-top": 2
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": "eslint:recommended"
+}
