@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="160" height="9" tilewidth="60" tileheight="60" nextobjectid="28">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="160" height="9" tilewidth="60" tileheight="60" nextobjectid="47">
  <tileset firstgid="1" name="tiles" tilewidth="60" tileheight="60" spacing="2" margin="3" tilecount="64" columns="8">
-  <image source="../img/tiles.png" width="500" height="500"/>
+  <image source="../../../../../../../../Sites/jumpnrun/dist/res/img/tiles.png" width="500" height="500"/>
  </tileset>
- <tileset firstgid="65" name="objects" tilewidth="60" tileheight="30" tilecount="2" columns="0">
-  <tile id="0">
-   <image width="30" height="30" source="../img/coin.png"/>
-  </tile>
+ <tileset firstgid="65" name="objects" tilewidth="60" tileheight="30" tilecount="4" columns="0">
   <tile id="1">
-   <image width="60" height="30" source="../img/spikes.png"/>
+   <image width="60" height="30" source="../../../../../../../../Sites/jumpnrun/dist/res/img/spikes.png"/>
+  </tile>
+  <tile id="6">
+   <image width="30" height="30" source="../img/coin-bronze.png"/>
+  </tile>
+  <tile id="7">
+   <image width="30" height="30" source="../img/coin-gold.png"/>
+  </tile>
+  <tile id="8">
+   <image width="30" height="30" source="../img/coin-silver.png"/>
   </tile>
  </tileset>
  <layer name="bgLayer" width="160" height="9">
@@ -33,19 +39,6 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,58,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer name="obstacleLayer" width="160" height="9" visible="0">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,35,35,35,35,35,35,35,35,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,35,35,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,35,35,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
@@ -175,40 +168,95 @@
   </object>
  </objectgroup>
  <objectgroup name="collectibles">
-  <object id="20" gid="65" x="795" y="375" width="30" height="30">
+  <object id="31" gid="72" x="975" y="375" width="30" height="30">
    <properties>
-    <property name="sprite" value="coin"/>
+    <property name="sprite" value="goldCoin"/>
     <property name="type" value="coin"/>
+    <property name="value" value="20"/>
    </properties>
   </object>
-  <object id="22" gid="65" x="885" y="375" width="30" height="30">
+  <object id="32" gid="71" x="795" y="375" width="30" height="30">
    <properties>
-    <property name="sprite" value="coin"/>
+    <property name="sprite" value="bronzeCoin"/>
     <property name="type" value="coin"/>
+    <property name="value" value="5"/>
    </properties>
   </object>
-  <object id="23" gid="65" x="975" y="375" width="30" height="30">
+  <object id="34" gid="73" x="885" y="375" width="30" height="30">
    <properties>
-    <property name="sprite" value="coin"/>
+    <property name="sprite" value="silverCoin"/>
     <property name="type" value="coin"/>
+    <property name="value" value="10"/>
    </properties>
   </object>
-  <object id="24" gid="65" x="1815" y="285" width="30" height="30">
+  <object id="37" gid="72" x="1815" y="285" width="30" height="30">
    <properties>
-    <property name="sprite" value="coin"/>
+    <property name="sprite" value="goldCoin"/>
     <property name="type" value="coin"/>
+    <property name="value" value="20"/>
    </properties>
   </object>
-  <object id="25" gid="65" x="2235" y="285" width="30" height="30">
+  <object id="38" gid="72" x="2235" y="285" width="30" height="30">
    <properties>
-    <property name="sprite" value="coin"/>
+    <property name="sprite" value="goldCoin"/>
     <property name="type" value="coin"/>
+    <property name="value" value="20"/>
    </properties>
   </object>
-  <object id="26" gid="65" x="2595" y="285" width="30" height="30">
+  <object id="39" gid="72" x="2595" y="285" width="30" height="30">
    <properties>
-    <property name="sprite" value="coin"/>
+    <property name="sprite" value="goldCoin"/>
     <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="40" gid="73" x="1725" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="41" gid="73" x="1905" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="42" gid="71" x="1665" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="43" gid="71" x="1965" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="44" gid="71" x="1575" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="45" gid="71" x="1485" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="46" gid="71" x="1395" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
    </properties>
   </object>
  </objectgroup>

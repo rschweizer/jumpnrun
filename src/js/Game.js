@@ -154,7 +154,7 @@ App.Game = (game) => {
 
   function collectibleHit(player, collectible) {
     collectible.kill()
-    score += 10
+    score += parseInt(collectible.value) || 5
     pulse.start()
   }
 
