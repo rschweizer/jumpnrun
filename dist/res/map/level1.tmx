@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="160" height="9" tilewidth="60" tileheight="60" nextobjectid="47">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="160" height="9" tilewidth="60" tileheight="60" nextobjectid="58">
  <tileset firstgid="1" name="tiles" tilewidth="60" tileheight="60" spacing="2" margin="3" tilecount="64" columns="8">
   <image source="../../../../../../../../Sites/jumpnrun/dist/res/img/tiles.png" width="500" height="500"/>
  </tileset>
@@ -196,14 +196,14 @@
     <property name="value" value="20"/>
    </properties>
   </object>
-  <object id="38" gid="72" x="2235" y="285" width="30" height="30">
+  <object id="38" gid="72" x="2205" y="285" width="30" height="30">
    <properties>
     <property name="sprite" value="goldCoin"/>
     <property name="type" value="coin"/>
     <property name="value" value="20"/>
    </properties>
   </object>
-  <object id="39" gid="72" x="2595" y="285" width="30" height="30">
+  <object id="39" gid="72" x="2505" y="285" width="30" height="30">
    <properties>
     <property name="sprite" value="goldCoin"/>
     <property name="type" value="coin"/>
@@ -257,6 +257,83 @@
     <property name="sprite" value="bronzeCoin"/>
     <property name="type" value="coin"/>
     <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="47" gid="73" x="2115" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="48" gid="73" x="2295" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="49" gid="73" x="2415" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="50" gid="73" x="2595" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="51" gid="71" x="2055" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="52" gid="71" x="2355" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="53" gid="71" x="3165" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="54" gid="71" x="3075" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="55" gid="71" x="3255" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="56" gid="73" x="3015" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="57" gid="72" x="2925" y="285" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
    </properties>
   </object>
  </objectgroup>
