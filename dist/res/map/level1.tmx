@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="160" height="9" tilewidth="60" tileheight="60" nextobjectid="58">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="160" height="9" tilewidth="60" tileheight="60" nextobjectid="96">
  <tileset firstgid="1" name="tiles" tilewidth="60" tileheight="60" spacing="2" margin="3" tilecount="64" columns="8">
   <image source="../../../../../../../../Sites/jumpnrun/dist/res/img/tiles.png" width="500" height="500"/>
  </tileset>
@@ -330,6 +330,258 @@
    </properties>
   </object>
   <object id="57" gid="72" x="2925" y="285" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="58" gid="72" x="3915" y="285" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="59" gid="73" x="3825" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="60" gid="71" x="3765" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="61" gid="72" x="4245" y="195" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="63" gid="72" x="4125" y="225" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="64" gid="72" x="4365" y="225" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="65" gid="72" x="4695" y="165" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="66" gid="73" x="4815" y="195" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="67" gid="71" x="4905" y="285" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="69" gid="71" x="4965" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="70" gid="71" x="4605" y="228" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="71" gid="72" x="5445" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="72" gid="72" x="8775" y="255" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="73" gid="72" x="8265" y="135" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="74" gid="72" x="8175" y="135" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="75" gid="72" x="8355" y="135" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="76" gid="71" x="7305" y="255" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="77" gid="71" x="7395" y="255" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="78" gid="71" x="7215" y="255" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="79" gid="73" x="7695" y="195" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="80" gid="73" x="7785" y="195" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="81" gid="73" x="7875" y="195" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="82" gid="72" x="9285" y="285" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="83" gid="73" x="9195" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="84" gid="71" x="9135" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="85" gid="72" x="6165" y="285" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="86" gid="73" x="6075" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="87" gid="73" x="6255" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="88" gid="71" x="6015" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="89" gid="71" x="6315" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="90" gid="72" x="6645" y="285" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="91" gid="72" x="6765" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="92" gid="73" x="6555" y="315" width="30" height="30">
+   <properties>
+    <property name="sprite" value="silverCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="10"/>
+   </properties>
+  </object>
+  <object id="93" gid="71" x="6495" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="bronzeCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="5"/>
+   </properties>
+  </object>
+  <object id="94" gid="72" x="5925" y="375" width="30" height="30">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+    <property name="value" value="20"/>
+   </properties>
+  </object>
+  <object id="95" gid="72" x="6405" y="375" width="30" height="30">
    <properties>
     <property name="sprite" value="goldCoin"/>
     <property name="type" value="coin"/>
