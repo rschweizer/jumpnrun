@@ -20,6 +20,6 @@ Just run *http-server* from within your repository and go to the outputted url �
 **Or simply visit the online live demo as described above ;)**
 
 ## Credits
-Game Engine: Phaser – http://phaser.io
-Game Assets: Kenney – http://kenney.nl
-Normalize.css: Nicolas Gallagher & Jonathan Neal – https://necolas.github.io/normalize.css/
+Game Engine: Phaser – http://phaser.io  
+Game Assets: Kenney – http://kenney.nl  
+Normalize.css: Nicolas Gallagher & Jonathan Neal – https://necolas.github.io/normalize.css/  
