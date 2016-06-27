@@ -1,5 +1,11 @@
-var webpack = require("webpack"),
-    ExtractTextPlugin = require("extract-text-webpack-plugin")
+var path = require('path'),
+    webpack = require('webpack'),
+    ExtractTextPlugin = require('extract-text-webpack-plugin')
+
+var phaserModule = path.join(__dirname, '/node_modules/phaser/'),
+    phaser = path.join(phaserModule, 'build/custom/phaser-arcade-physics.js'),
+    pixi = path.join(phaserModule, 'build/custom/pixi.js'),
+    p2 = path.join(phaserModule, 'build/custom/p2.js')
 
 module.exports = {
   cache: false,
@@ -11,6 +17,18 @@ module.exports = {
   },
   module: {
     loaders: [
+      {
+        test: /phaser-arcade-physics.js/,
+        loader: "script"
+      },
+      {
+        test: /pixi.js/,
+        loader: "script"
+      },
+      {
+        test: /p2.js/,
+        loader: "script"
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -28,6 +46,13 @@ module.exports = {
         loader: 'file?name=../fonts/[hash].[ext]'
       }
     ]
+  },
+  resolve: {
+    alias: {
+      'phaser': phaser,
+      'pixi.js': pixi,
+      'p2': p2
+    }
   },
   postcss: [
     require("postcss-cssnext")()

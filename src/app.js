@@ -1,6 +1,10 @@
 import './css/normalize.css'
 import './css/app.css'
 
+import 'pixi.js'
+import 'p2'
+import 'phaser'
+
 import GameController from './js/GameController.js'
 
 let App = App || {}
