@@ -17,7 +17,7 @@ $ http-server
 
 Just run *http-server* from within your repository and go to the outputted url – should be http://localhost:8080. Then simply click on the *dist/* folder and voilà.
 
-**Or simply visit the online live demo as described above ;)**
+**Or simply visit the live demo online as described above ;)**
 
 ## Credits
 Game Engine: Phaser – http://phaser.io  
