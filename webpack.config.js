@@ -1,49 +1,57 @@
-var path = require('path'),
-    webpack = require('webpack'),
-    ExtractTextPlugin = require('extract-text-webpack-plugin')
+const path = require('path')
+const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-var phaserModule = path.join(__dirname, '/node_modules/phaser/'),
-    phaser = path.join(phaserModule, 'build/custom/phaser-arcade-physics.js'),
-    pixi = path.join(phaserModule, 'build/custom/pixi.js'),
-    p2 = path.join(phaserModule, 'build/custom/p2.js')
+var phaserModule = path.join(__dirname, '/node_modules/phaser-ce/')
+var phaser = path.join(phaserModule, 'build/custom/phaser-split.js')
+var pixi = path.join(phaserModule, 'build/custom/pixi.js')
+var p2 = path.join(phaserModule, 'build/custom/p2.js')
 
 module.exports = {
-  cache: false,
-  context: __dirname + "/src",
-  entry: "./app.js",
+  entry: './index.js',
   output: {
-    path: __dirname + "/dist/res/js",
-    filename: "script.js"
+    path: path.join(__dirname, 'docs/res/js'),
+    filename: 'script.js'
   },
   module: {
     loaders: [
       {
-        test: /phaser-arcade-physics.js/,
-        loader: "script"
-      },
-      {
-        test: /pixi.js/,
-        loader: "script"
-      },
-      {
-        test: /p2.js/,
-        loader: "script"
-      },
-      {
         test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel",
-        query: {
-          presets: ["es2015"]
-        }
+        loader: 'babel-loader',
+        options: { presets: [ 'es2015' ] },
+        exclude: /node_modules/
+      },
+      {
+        test: /pixi\.js/,
+        use: ['expose-loader?PIXI']
+      },
+      {
+        test: /phaser-split\.js$/,
+        use: ['expose-loader?Phaser']
+      },
+      {
+        test: /p2\.js/,
+        use: ['expose-loader?p2']
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract("style", "css!postcss")
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader'
+            },
+            {
+              loader: 'postcss-loader',
+              options: { plugins: () => [ require('postcss-cssnext') ] }
+            }
+          ]
+        })
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'file?name=../fonts/[hash].[ext]'
+        loader: 'file-loader',
+        options: { name: '../fonts/[hash].[ext]' }
       }
     ]
   },
@@ -54,13 +62,8 @@ module.exports = {
       'p2': p2
     }
   },
-  postcss: [
-    require("postcss-cssnext")()
-  ],
-  // devtool: 'source-map',
   plugins: [
-    new ExtractTextPlugin("../css/style.css"),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin()
+    new ExtractTextPlugin('../css/style.css'),
+    new webpack.optimize.UglifyJsPlugin({ output: { comments: false } })
   ]
 }

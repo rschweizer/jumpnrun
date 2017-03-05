@@ -3,7 +3,7 @@
 > Just a simple Jump'n'Run game built with Phaser.
 
 ## Demo
-For a live demo visit https://rschweizer.github.com/jumpnrun
+For a live demo visit https://rschweizer.github.io/jumpnrun
 
 ## Usage
 You need a simple file server to run this game locally. You can install *http-server* via npm for this.
@@ -15,7 +15,7 @@ $ npm install -g http-server
 $ http-server
 ```
 
-Just run *http-server* from within your repository and go to the outputted url – should be http://localhost:8080. Then simply click on the *dist/* folder and voilà.
+Just run *http-server* from within your repository and go to the outputted url – should be http://localhost:8080. Then simply click on the *docs* folder and voilà.
 
 **Or simply visit the live demo online as described above ;)**
 
